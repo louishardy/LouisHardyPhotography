@@ -1,0 +1,107 @@
+.title {
+font-family: sans-serif;
+color: grey;
+text-align: center;
+font size: 50px;
+}
+h1{
+font-family: sans-serif;
+color: grey;
+text-align: center;
+font size: 50px;
+}
+body{
+  background-color: white;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  padding-top: 0.5rem;
+}
+.sidebar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 1.5s;
+    padding-top: 60px;
+    text-align:center;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: grey;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidebar a:hover{
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .mySidebar {padding-top: 15px;}
+  .mySidebar a {font-size: 18px;}
+}
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.aboutMePhoto {
+float: left;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 400px;
+}
+.aboutMeTitle{
+  position: fixed;
+   top: 10px;
+   left: 10px;
+   color: grey;
+}
+/* image fades */
+div {
+    transition-property: all;
+    transition-duration: 2s;
+    opacity: ;
+    transition-delay: 1s;
+}
